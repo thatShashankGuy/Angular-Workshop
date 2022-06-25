@@ -1,5 +1,5 @@
 import { visitAll } from '@angular/compiler';
-import { Component, OnInit, Output,EventEmitter } from '@angular/core';
+import { Component, OnInit, Output,EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-box',
@@ -10,7 +10,7 @@ export class BoxComponent implements OnInit {
  
   visible : boolean = false
   constructor() { }
-
+  @Input() messageRecieved :string = ''
   @Output() event = new EventEmitter<boolean>()
 
   ngOnInit(): void {
