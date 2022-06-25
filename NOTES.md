@@ -72,3 +72,12 @@ The <parent-component> serves as the context for the <child-component>.
 
 @Input() and @Output() give a child component a way to communicate with its parent component. @Input() lets a parent component update data in the child component. Conversely, @Output() lets the child send data to a parent component.
 
+
+# Template Statements 
+
+Template statements are methods or properties that you can use in your HTML to respond to user events. With template statements, your application can engage users through actions such as displaying dynamic content or submitting forms.
+
+Conciseness -	Use method calls or basic property assignments to keep template statements minimal.
+
+Work within the context -	The context of a template statement can be the component class instance or the template. Because of this, template statements cannot refer to anything in the global namespace such as window or document. For example, template statements can't call console.log() or Math.max().
+

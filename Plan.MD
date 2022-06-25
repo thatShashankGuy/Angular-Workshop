@@ -28,6 +28,10 @@
 
 5. Template Statment 
 
+6. Iteration of dynamic content
+
+7. conditional statements 
+
 
 
 # SESSION 3 

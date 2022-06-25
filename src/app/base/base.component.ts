@@ -1,15 +1,17 @@
+import { style } from '@angular/animations';
 import { Component, OnInit, OnDestroy,HostListener, OnChanges, SimpleChanges} from '@angular/core';
 
 @Component({
   selector: 'app-base',
   templateUrl: './base.component.html',
-  styleUrls: ['./base.component.css']
+  styleUrls: ['./base.component.css'],
+  //styles: 'background-color : red'
 })
 export class BaseComponent implements OnInit,OnDestroy,OnChanges{
   textfromArea : string = 'no data'
   title :string  = 'Angular Basic Component'
   nextTitle : string = 'new Title'
-  color :string = 'color : blue'
+  color :string = 'color : red'
   ngModText : string  = ''
   random : number = 0; 
   constructor() {

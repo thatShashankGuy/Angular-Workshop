@@ -10,8 +10,12 @@ export class BoxComponent implements OnInit {
  
   visible : boolean = false
   constructor() { }
+   //parent to child --@input
   @Input() messageRecieved :string = ''
+  @Input() jack : boolean = false
+  //Child to parent --@output
   @Output() event = new EventEmitter<boolean>()
+  @Output() messageEven = new EventEmitter<string>()
 
   ngOnInit(): void {
   }

@@ -1,5 +1,5 @@
 <div>
-    <app-box (event)="togglefunc($event)" [messageRecieved]="message"></app-box>
+    <app-box (event)="togglefunc($event)" [messageRecieved]="yuri" [jack] = "message"></app-box>
     <div *ngIf="receivedToggle === true">
     <table>
             <td>{{headerTable[0]}}</td>
