@@ -1,0 +1,16 @@
+<div>
+    <label>Show Employee Table</label>
+    <app-box (event)="togglefunc($event)"></app-box>
+    <div *ngIf="receivedToggle === true">
+    <table>
+            <td>{{headerTable[0]}}</td>
+            <td>{{headerTable[1]}}</td>
+            <td>{{headerTable[2]}}</td>
+        <tr *ngFor="let emp of employeeDataTable ">
+            <td>{{emp[0]}}</td>
+            <td>{{emp[1]}}</td>
+            <td>{{emp[2]}}</td>
+        </tr>
+    </table>
+</div>
+</div>

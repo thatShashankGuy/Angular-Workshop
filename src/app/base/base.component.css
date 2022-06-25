@@ -1,0 +1,13 @@
+.smallForm{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    padding-left: 300px;
+    padding-top: 50px;
+}
+
+div{
+    border: black;
+    border-style: solid;
+}

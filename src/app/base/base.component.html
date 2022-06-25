@@ -1,0 +1,12 @@
+
+    <div class="smallForm">
+        <span [style]="color">{{title}}</span><br><br>
+        <input type="text" id="'area" (change)="addText($event)" /> &nbsp;&nbsp;&nbsp;<a>Oninit Random Number : {{random}}</a><br><br>
+        <button (click)="removeText()">Clear Text</button> <br><br>
+        <label id = 'mySpan' style="background-color:wheat;">{{textfromArea}}</label><br><br>
+        <form>
+            <input type="text" id="'area2" [(ngModel)] ='ngModText'  /><br><br>
+            <label id = 'mySpan2' style="background-color:wheat;">{{ngModText}}</label>
+        </form>
+        
+    </div>
