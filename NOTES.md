@@ -61,3 +61,14 @@
 
 # To pass data from child to parent component in React:
  common pattern in Angular is sharing data between a parent component and one or more child components. Implement this pattern with the @Input() and @Output() decorators.
+
+ Consider the following hierarchy:
+
+content_copy
+<parent-component>
+  <child-component></child-component>
+</parent-component>
+The <parent-component> serves as the context for the <child-component>.
+
+@Input() and @Output() give a child component a way to communicate with its parent component. @Input() lets a parent component update data in the child component. Conversely, @Output() lets the child send data to a parent component.
+
